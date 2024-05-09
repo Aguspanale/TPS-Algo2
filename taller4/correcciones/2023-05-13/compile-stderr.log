@@ -1,0 +1,13 @@
+In file included from ./string_map.h:106,
+                 from ../../../../../taller4/string_map_tests.cpp:2:
+./string_map.hpp: In instantiation of ‘void borrarTodosMenosPrimero(std::vector<T*>) [with T = string_map<int>::Nodo]’:
+./string_map.hpp:130:28:   required from ‘void string_map<T>::erase(const string&) [with T = int; std::string = std::__cxx11::basic_string<char>]’
+../../../../../taller4/string_map_tests.cpp:178:20:   required from here
+./string_map.hpp:160:23: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<string_map<int>::Nodo*, std::allocator<string_map<int>::Nodo*> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  160 |     for (int i = 1; i < v.size(); ++i) {
+      |                     ~~^~~~~~~~~~
+./string_map.hpp: In instantiation of ‘void borrarTodosMenosPrimero(std::vector<T*>) [with T = string_map<string_map<int> >::Nodo]’:
+./string_map.hpp:130:28:   required from ‘void string_map<T>::erase(const string&) [with T = string_map<int>; std::string = std::__cxx11::basic_string<char>]’
+./string_map.hpp:48:9:   required from ‘string_map<T>::~string_map() [with T = string_map<int>]’
+../../../../../taller4/string_map_tests.cpp:141:33:   required from here
+./string_map.hpp:160:23: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<string_map<string_map<int> >::Nodo*, std::allocator<string_map<string_map<int> >::Nodo*> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]

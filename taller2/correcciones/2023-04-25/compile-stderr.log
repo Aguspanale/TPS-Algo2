@@ -1,0 +1,11 @@
+In file included from /usr/include/c++/11/cassert:44,
+                 from ./Lista.cpp:2,
+                 from ../../../../../taller2/lista_tests.cpp:3:
+./Lista.cpp: In member function ‘const int& Lista::iesimo(Nat) const’:
+./Lista.cpp:99:14: warning: comparison of integer expressions of different signedness: ‘Nat’ {aka ‘long unsigned int’} and ‘const int’ [-Wsign-compare]
+   99 |     assert(i < _longitud);
+      |            ~~^~~~~~~~~~~
+./Lista.cpp: In member function ‘int& Lista::iesimo(Nat)’:
+./Lista.cpp:108:14: warning: comparison of integer expressions of different signedness: ‘Nat’ {aka ‘long unsigned int’} and ‘int’ [-Wsign-compare]
+  108 |     assert(i < _longitud);
+      |            ~~^~~~~~~~~~~
